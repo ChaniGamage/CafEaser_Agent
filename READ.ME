@@ -1,0 +1,75 @@
+
+CafEase Meal Recommender
+CafEase Meal Recommender is a web application that helps students at a Sri Lankan university cafeteria design personalized meal combos (meal + beverage) based on their budget, dietary preferences, and spice level, with a question-and-answer feature powered by the Gemini API.
+Features
+
+Interactive UI: Enhanced Streamlit interface with sidebar navigation and mobile-friendly layout.
+Personalized Combos: Suggests meal and beverage combos tailored to user inputs.
+Q&A System: Allows users to select from predefined questions with dynamic answers.
+Feedback Loop: Collects user ratings and comments for continuous improvement.
+Gemini API Integration: Generates dynamic meal recommendations, with mock data as a fallback.
+
+Prerequisites
+
+Python 3.8+
+Git
+Gemini API key (obtain from Google AI Studio)
+
+Installation
+
+Clone the repository:
+git clone https://github.com/your-username/cafease-meal-recommender.git
+cd cafease-meal-recommender
+
+
+Create a virtual environment and activate it:
+python -m venv venv
+venv\Scripts\activate  # On Windows
+
+
+Install dependencies:
+pip install streamlit google-generativeai
+
+
+Set up Gemini API key:
+
+Replace "YOUR_GEMINI_API_KEY" in generator.py with your actual key.
+Alternatively, set an environment variable:set GOOGLE_API_KEY=your-actual-api-key-here  # On Windows
+
+
+
+
+
+Usage
+
+Run the Streamlit app:
+streamlit run app.py
+
+
+Open your browser to http://localhost:8501.
+
+Use the sidebar to enter your preferences (budget, dietary preference, spice level) and save them.
+
+View your personalized meal combo, select a question from the main panel to get an answer, or submit feedback with a rating and comment.
+
+
+Project Structure
+
+app.py: Main Streamlit app with Q&A and interface logic.
+generator.py: Generates mock meal combo data and integrates with Gemini API.
+
+Dependencies
+
+streamlit
+google-generativeai
+
+Notes
+
+Ensure sufficient disk space before installing dependencies.
+The generator.py uses mock data as a fallback; ensure a valid Gemini API key for dynamic recommendations.
+Keep your API key secure and avoid committing it to GitHub.
+
+Video Demonstration
+A demo video will be uploaded to YouTube by April 30, 2025.
+License
+MIT License
